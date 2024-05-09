@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,20 +23,137 @@
 <body>
     <footer>
         <!-- Top navigatio bar -->
-        <nav>
-            <!-- Left options (logo/home page and links) -->
-            <menu>
+        <nav class="nav-bar">
+            <!-- Left options (logo, dropdown menus and links) -->
+            <menu class="nav-bar-left">
+                <!-- Logo -->
+                <li>
+                    <a href="index.html">
+                        <img src="images/logo-small.png" alt="Dropbox">
+                    </a>
+                </li>
 
+                <!-- Products link (with dropdown menu) -->
+                <li class="nav-bar-link">
+                    <a href="">
+                        Prodotti&ensp;<i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <menu class="dropdown">
+                        <li>
+                            <a href="">
+                                <img src="images/icons/dropbox-icon.svg" alt="Dropbox">
+                                <span>
+                                    Dropbox
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="">
+                                <img src="images/icons/backup-icon.svg" alt="Backup">
+                                <span>
+                                    Backup
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="">
+                                <img src="images/icons/sign-icon.svg" alt="">
+                                <span>
+                                    Sign
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="">
+                                <img src="images/icons/docsend-icon.svg" alt="">
+                                <span>
+                                    DocSend
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="">
+                                <img src="images/icons/dash-icon.svg" alt="">
+                                <span>
+                                    Dash
+                                </span>
+                            </a>
+                        </li>
+                    </menu>
+                </li>
+
+                <!-- Download link (with dropdown menu) -->
+                <li class="nav-bar-link">
+                    <a href="">
+                        Scarica&ensp;<i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <menu class="dropdown">
+                        <li>
+                            <a href="">
+                                <span>
+                                    App per desktop
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="">
+                                <span>
+                                    App per dispositivi mobili
+                                </span>
+                            </a>
+                        </li>
+                    </menu>
+                </li>
+
+                <!-- Pricing link -->
+                <li class="nav-bar-link">
+                    <a href="">
+                        Prezzi
+                    </a>
+                </li>
             </menu>
 
-            <!-- Right options (links and auth) -->
-            <menu>
+            <!-- Right options (dropdown menus, links and visual button) -->
+            <menu class="nav-bar-right">
+                <!-- Sales office -->
+                <li class="nav-bar-link">
+                    <a href="">
+                        Contatta l'ufficio vendite
+                    </a>
+                </li>
 
+                <!-- Support link -->
+                <li class="nav-bar-link">
+                    <a href="">
+                        Prezzi
+                    </a>
+                </li>
+
+                <!-- Sign-in link -->
+                <li class="nav-bar-link">
+                    <a href="">
+                        Accedi
+                    </a>
+                </li>
+
+                <!-- Start visual button -->
+                <li>
+                    <a class="visual-button" href="">
+                        Inizia
+                    </a>
+                </li>
             </menu>
         </nav>
 
         <!-- Page jumbo -->
-        <section class="container-1000px">
+        <section class="container-62_50rem">
             <h1>
 
             </h1>
