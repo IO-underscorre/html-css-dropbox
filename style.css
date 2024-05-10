@@ -10,7 +10,7 @@ body {
     font-optical-sizing: auto;
 }
 
-a {
+header a , footer a {
     color: inherit;
     text-decoration: inherit;
 }
@@ -79,12 +79,11 @@ header {
 
 
 /* Top navigation bar */
-.nav-bar {
+#nav-bar {
+    background-color: #ffffff;
     position: fixed;
     z-index: 10;
     width: 100%;
-    background-color: #ffffff;
-    overflow-x: auto;
     
     align-items: center;
     
@@ -100,13 +99,13 @@ header {
     font-weight: 300;
 }
 
-.nav-bar > menu > li {
+#nav-bar > menu > li {
     position: relative;
     margin: 0 1rem;
     display: inline-block;
 }
 
-.nav-bar img {
+#nav-bar img {
     vertical-align: text-bottom;
 }
 
@@ -162,14 +161,14 @@ header {
 
 
 /* Jumbo */
-.jumbo {
+#jumbo {
     position: relative;
     top: 8rem;
     
     padding-bottom: 3rem;
 }
 
-.jumbo .column-container {
+#jumbo .column-container {
     flex-wrap: wrap-reverse;
     align-items: stretch;
 }
@@ -179,31 +178,31 @@ h1 {
     margin-bottom: 3rem;
 }
 
-.jumbo .column {
+#jumbo .column {
     flex-basis: 15rem;
     
     display: flex;
     flex-flow: column nowrap;
 }
-.jumbo .column > * {
+#jumbo .column > * {
     display: block;
 }
 
-.jumbo .visual-button {
+#jumbo .visual-button {
     width: fit-content;
     margin: 2rem 0;
 }
 
-.jumbo span {
+#jumbo .link-to-section {
     font-size: 3rem;
-    padding: 3rem 0 5rem;
+    padding: 3rem 0 6rem;
     margin: auto 0;
 }
 
-.jumbo .column-double {
+#jumbo .column-double {
     flex-basis: 30rem;
 }
 
-.jumbo img {
+#jumbo img {
     width: 100%;
 }
