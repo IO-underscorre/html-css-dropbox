@@ -19,7 +19,42 @@ ul , menu {
     list-style: none;
 }
 
+/* General container rules */
+.align-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-75rem {
+    width: 90%;
+    max-width: 75rem;
+}
+
+.container-62_50rem {
+    width: 80%;
+    max-width: 62.5rem;
+}
+
+/* General flex containers */
+.column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* General flex items */
+.column {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.column-double {
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+/* Visual buttons */
 .visual-button {
+    display: inline-block;
     color: #ffffff;
     background-color: #0061ff;
     padding: .5em .75em;
@@ -36,31 +71,32 @@ ul , menu {
 }
 
 
+
 /* Header */
 header {
     background-color: #b4d0e7;
 }
+
 
 /* Top navigation bar */
 .nav-bar {
     position: fixed;
     z-index: 10;
     width: 100%;
-    min-height: 5rem;
-
-    display: flex;
+    background-color: #ffffff;
+    overflow-x: auto;
+    
     align-items: center;
-    justify-content: space-between;
     
     font-weight: 500;
     text-align: center;
 }
 
-.nav-bar > menu:last-child {
-    font-weight: 300;
+.nav-bar-left , .nav-bar-right {
+    white-space: nowrap;
 }
 
-.nav-bar:last-child {
+.nav-bar-right {
     font-weight: 300;
 }
 
@@ -74,34 +110,37 @@ header {
     vertical-align: text-bottom;
 }
 
-.nav-bar-link > a {
+.nav-bar-link-wrapper > a {
+    display: inline-block;
     padding: 2em 0;
+    border-bottom: 2px solid #00000000;
 }
 
-.nav-bar-link:hover > a {
+.nav-bar-link-wrapper:hover > a {
     color: #0061ff;
 }
 
-.nav-bar-left .nav-bar-link:hover > a {
-    border-bottom: 2px solid #0061ff;
+.nav-bar-left .nav-bar-link-wrapper:hover > a {
+    border-color: #0061ff;
 }
 
 /* Dropdown menu */
 .dropdown {
     display: none;
     position: absolute;
-    top: calc(100% + 2em);
+    top: calc(100% - 2px);
     left: 0;
     z-index: 15;
     width: max-content;
     padding: .5rem;
     background-color: #ffffff;
+    border-radius:0 .75rem .75rem .75rem;
     border: 2px solid #0061ff;
 
     text-align: left;
 }
 
-.nav-bar-link:hover .dropdown {
+.nav-bar-link-wrapper:hover .dropdown {
     display: block;
 }
 
@@ -119,4 +158,52 @@ header {
 .dropdown img {
     height: 2.25rem;
     vertical-align: middle;
+}
+
+
+/* Jumbo */
+.jumbo {
+    position: relative;
+    top: 8rem;
+    
+    padding-bottom: 3rem;
+}
+
+.jumbo .column-container {
+    flex-wrap: wrap-reverse;
+    align-items: stretch;
+}
+
+h1 {
+    font-size: 4.75rem;
+    margin-bottom: 3rem;
+}
+
+.jumbo .column {
+    flex-basis: 15rem;
+    
+    display: flex;
+    flex-flow: column nowrap;
+}
+.jumbo .column > * {
+    display: block;
+}
+
+.jumbo .visual-button {
+    width: fit-content;
+    margin: 2rem 0;
+}
+
+.jumbo span {
+    font-size: 3rem;
+    padding: 3rem 0 5rem;
+    margin: auto 0;
+}
+
+.jumbo .column-double {
+    flex-basis: 30rem;
+}
+
+.jumbo img {
+    width: 100%;
 }
