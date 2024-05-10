@@ -70,6 +70,39 @@ ul , menu {
     box-shadow: inset 0 0.5em 1em #00000050;
 }
 
+/* Toggle style switch */
+.toggle-switch {
+    appearance: none;
+    position: relative;
+    width: 2.75em;
+    height: 1.5em;
+    vertical-align: text-top;
+    background-color: #d4d4d4;
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.toggle-switch::after {
+    content: '';
+    position: absolute;
+    top: .25em;
+    left: .25em;
+    height: 1em;
+    width: 1em;
+    background-color: #ffffff;
+
+    transition: .5s;
+}
+
+.toggle-switch:checked {
+    background-color: #0061ff;
+}
+
+.toggle-switch:checked::after {
+    left: calc(100% - 1.25em);
+}
+
 
 
 /* Header */
