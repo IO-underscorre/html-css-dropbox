@@ -39,6 +39,7 @@ ul , menu {
 .column-container {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 /* General flex items */
@@ -55,19 +56,35 @@ ul , menu {
 /* Visual buttons */
 .visual-button {
     display: inline-block;
+    padding: .5em .75em;
+    border: 1px solid #00000000;
+}
+
+.visual-button.button-blue {
     color: #ffffff;
     background-color: #0061ff;
-    padding: .5em .75em;
+}
+
+.visual-button.button-grey {
+    color: #b4b4b4;
+    background-color: #ffffff;
+    border-color: #b4b4b4;
 }
 
 .visual-button:hover {
-    background-color: #2779ff;
     box-shadow: 0 0.25em 0.5em #00000050;
 }
 
+.visual-button.button-blue:hover {
+    background-color: #2779ff;
+}
+
 .visual-button:active {
-    background-color: #0045b4;
     box-shadow: inset 0 0.5em 1em #00000050;
+}
+
+.visual-button.button-blue:active {
+    background-color: #0045b4;
 }
 
 /* Toggle style switch */
@@ -244,14 +261,20 @@ h1 {
 
 
 /* Main */
-#plans {
+main > section {
     margin-top: 8rem;
 }
 
-#plans h2 {
+h2 {
     font-size: 2.5rem;
 }
 
+main .visual-button {
+    text-decoration: none;
+}
+
+
+/* Plans section */
 .preferred-invoicing {
     margin: 3rem 0;
     padding: .5rem;
@@ -272,7 +295,6 @@ h1 {
 
     align-items: stretch;
     flex-wrap: wrap;
-    gap: 2rem;
 }
 
 /* Plan details */
@@ -282,9 +304,6 @@ h1 {
 
 .plan-overview.column {
     flex-basis: 15.5rem;
-    
-    display: flex;
-    flex-flow: column nowrap;
 }
 
 .plan-overview strong {
@@ -337,7 +356,6 @@ h1 {
 .plan-overview .visual-button {
     display: block;
     text-align: center;
-    text-decoration: none;
     margin-bottom: 2rem;
 }
 
@@ -363,7 +381,7 @@ h1 {
 }
 
 .plan-overview:not(.column) .column-double {
-    flex-basis: 31rem;
+    flex-basis: 20rem;
 }
 
 .plan-overview:not(.column) p {
@@ -371,5 +389,32 @@ h1 {
 }
 
 .plan-overview:not(.column) .column {
-    flex-basis: 15.5rem;
+    flex-basis: 10rem;
+}
+
+
+/* Partners section */
+#partner-dropbox {
+    flex-wrap: wrap-reverse;
+}
+
+#partner-dropbox .column {
+    flex-basis: 15rem;
+}
+
+#partner-dropbox .column-double {
+    flex-basis: 30rem;
+}
+
+#partner-dropbox img {
+    width: 100%;
+}
+
+#partner-dropbox h2 {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+}
+
+#partner-dropbox p {
+    margin: 1rem 0 2rem;
 }
