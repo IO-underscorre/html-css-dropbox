@@ -295,7 +295,7 @@ h1 {
     padding: .5rem;
 }
 
-.plan-overview div {
+.plan-overview > div {
     padding: 1.5rem;
 }
 
@@ -359,8 +359,17 @@ h1 {
 
 .plan-overview:not(.column) .column-container {
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.plan-overview:not(.column) .visual-button {
-    flex-shrink: 0;
+.plan-overview:not(.column) .column-double {
+    flex-basis: 31rem;
+}
+
+.plan-overview:not(.column) p {
+    margin-bottom: 1.5rem;
+}
+
+.plan-overview:not(.column) .column {
+    flex-basis: 15.5rem;
 }
