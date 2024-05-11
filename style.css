@@ -437,3 +437,9 @@ main > section {
 #business-dropbox p {
     margin-top: 1rem;
 }
+
+
+/* Stories section */
+#stories a {
+    display: block;
+}
