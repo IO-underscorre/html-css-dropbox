@@ -19,6 +19,18 @@ ul , menu {
     list-style: none;
 }
 
+h1 {
+    font-size: 4.75rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+section > *:not(:first-child) {
+    margin-top: 3rem;
+}
+
 /* General container rules */
 .align-container {
     margin-left: auto;
@@ -85,6 +97,10 @@ ul , menu {
 
 .visual-button.button-blue:active {
     background-color: #0045b4;
+}
+
+main .visual-button {
+    text-decoration: none;
 }
 
 /* Toggle style switch */
@@ -224,11 +240,6 @@ header {
     align-items: stretch;
 }
 
-h1 {
-    font-size: 4.75rem;
-    margin-bottom: 3rem;
-}
-
 #jumbo .column {
     flex-basis: 15rem;
     
@@ -265,18 +276,9 @@ main > section {
     margin-top: 8rem;
 }
 
-h2 {
-    font-size: 2.5rem;
-}
-
-main .visual-button {
-    text-decoration: none;
-}
-
 
 /* Plans section */
 .preferred-invoicing {
-    margin: 3rem 0;
     padding: .5rem;
     
     text-align: center;
@@ -290,7 +292,7 @@ main .visual-button {
     margin: 0 1rem;
 }
 
-#plans > .column-container {
+#plans > div > .column-container {
     margin-bottom: 2rem;
 
     align-items: stretch;
@@ -411,7 +413,6 @@ main .visual-button {
 }
 
 #partner-dropbox h2 {
-    margin-top: 2rem;
     font-size: 1.75rem;
 }
 
@@ -422,8 +423,6 @@ main .visual-button {
 
 /* Dropbox business section */
 #business-dropbox .column-container {
-    margin-top: 3rem;
-    
     flex-wrap: wrap;
 }
 
