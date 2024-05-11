@@ -418,3 +418,23 @@ main .visual-button {
 #partner-dropbox p {
     margin: 1rem 0 2rem;
 }
+
+
+/* Dropbox business section */
+#business-dropbox .column-container {
+    margin-top: 3rem;
+    
+    flex-wrap: wrap;
+}
+
+#business-dropbox .column {
+    flex-basis: 15.5rem;
+}
+
+#business-dropbox img {
+    width: 100%;
+}
+
+#business-dropbox p {
+    margin-top: 1rem;
+}
