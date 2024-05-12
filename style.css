@@ -565,11 +565,15 @@ main > section:last-of-type {
     color: #61082b;
 }
 
+
+/* FAQ section */
 .faq {
     padding: 2.5rem 0;
-    border-color: #b4b4b4;
-    border-style: solid;
-    border-width: 1px 0;
+    border-top: 1px solid #b4b4b4;
+}
+
+.faq:last-child {
+    border-bottom: 1px solid #b4b4b4;
 }
 
 .faq summary {
@@ -590,4 +594,51 @@ main > section:last-of-type {
 
 .faq[open] i {
     transform: rotate(180deg);
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4rem 0 2rem;
+}
+
+footer a:hover {
+    color: #b4b4b4;
+}
+
+footer .column-container {
+    flex-wrap: wrap;
+}
+
+footer .column > * {
+    display: block;
+}
+
+footer .column > span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+footer .column > a {
+    font-size: .875rem;
+    margin-top: .5rem;
+}
+
+footer .border-div {
+    height: 4rem;
+    width: 8rem;
+    border-bottom: 1px solid #ffffff;
+}
+
+.language {
+    display: block;
+    margin-top: 2rem;
+}
+
+.language span {
+    padding: 0 .125rem;
 }
