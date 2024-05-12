@@ -19,6 +19,14 @@ ul , menu {
     list-style: none;
 }
 
+details > summary {
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
 h1 {
     font-size: 4.75rem;
 }
@@ -279,6 +287,10 @@ header {
 /* Main */
 main > section {
     margin-top: 8rem;
+}
+
+main > section:last-of-type {
+    margin-bottom: 8rem;
 }
 
 
@@ -551,4 +563,31 @@ main > section {
     align-items: baseline;
 
     color: #61082b;
+}
+
+.faq {
+    padding: 2.5rem 0;
+    border-color: #b4b4b4;
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+.faq summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.faq i {
+    padding: 0 2rem;
+    transition: .1s;
+}
+
+.faq > span {
+    display: block;
+    padding-top: 1.5rem;
+    color: #b4b4b4;
+}
+
+.faq[open] i {
+    transform: rotate(180deg);
 }
